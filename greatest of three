@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a =10;
+int b;
+int sum;
+clrscr ();
+
+printf("enter the value of b:");
+scanf("%d",&b);
+
+if(a>b)
+{
+printf("a is greater = %d",a);
+}
+else
+{
+printf("b is greater = %d",b);
+}
+getch ();
+return 0;
+}
+
+output:-
+enter the value of b:15
+enter the value of c:16
+16 is largest number
