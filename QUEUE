@@ -1,0 +1,48 @@
+#include<stdio.h>
+#define n 5
+int main()
+{
+int queue[n],ch=1,front=0,rear=0,i,j=1,x=n;
+printf("queue using array");
+printf("\n1.insertion \n2.deletion \n3.Display \n4.exit");
+while(ch)
+{
+printf("\nenter the choice:");
+scanf("%d",&ch);
+{
+case 1:
+if(rear==x)
+printf("\n queue is fail");
+else
+{
+printf("\n enter no %d:",j++)
+scanf("%d",&queue[rear++]);
+
+}
+break;
+case 2:
+if(front==rear)
+{
+printf("\n queue is empty");
+}
+else
+{
+printf("\n deleted element is %d",queue[front++]);
+x++;
+}
+break;
+case 3:
+printf("\nqueue elements are:\n");
+if(front==rear)
+printf("\n queue is empty");
+else
+{
+for(i=front; i<rear; i++)
+{
+printf("%d",queue[i]);
+printf("\n");
+}
+break;
+case 4:
+exit(0);
+default:
